@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Financial Planner</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- JS Scripts -->
+    <script src="./js/script.js" defer></script>
+
+  </head>
+
+  <body>
+
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <h1>Welcome to Financial Planner App !</h1>
+    </div>
+
+    <!-- Income Modal -->
+    <!-- The Modal -->
+    <div id="modalIncome" class="modal" style="display: none;">
+
+      <!-- Modal content -->
+      <div class="modal-income-content">
+        <span class="close">&times;</span>
+        <h1>Tambah Income</h1>
+        <form>
+          <label>Nama: </label>
+          <input type="text" id="nama-income"><br>
+          <label>Jenis: </label>
+          <input type="text" id="jenis-income"><br>
+          <label>Price: </label>
+          <input type="integer" id="price-income"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Income Modal -->
+    <!-- The Modal -->
+    <div id="modalExpense" class="modal" style="display: none;">
+
+      <!-- Modal content -->
+      <div class="modal-expense-content">
+        <span class="close-2">&times;</span>
+        <h1>Tambah Expense</h1>
+        <form>
+          <label>Nama: </label>
+          <input type="text" id="nama-expense"><br>
+          <label>Jenis: </label>
+          <input type="text" id="jenis-expense"><br>
+          <label>Price: </label>
+          <input type="integer" id="price-expense"><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+
+    <div class="container" id="main">
+      <!-- Main Content Container -->
+      <div class="main-content-container">
+        <div class="column-main">
+          <h1 style="text-align: center;">Your Total Money</h1>
+          <h3 style="text-align: center;">{income-expense}</h3>
+        </div>
+        <div class="column-main">
+          <div class="buttonDiv">
+            <div class="income-button">
+              <button id="inc-btn">Add Income</button>
+            </div>
+            <div class="expense-button">
+              <button id="exp-btn">Add Expense</button>
+            </div>
+          </div>
+        </div>
+        <!-- Sub Content Container -->
+        <div class="sub-content-container">
+          <!-- Income Container -->
+          <div class="income-container">
+            <h1>Incomes</h1>
+          </div>
+          <!-- Expense Container -->
+          <div class="expense-container">
+            <h1>Expenses</h1>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </body>
+  <script src="./js/script.js"></script>
+
+</html>
